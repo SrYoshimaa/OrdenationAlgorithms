@@ -31,22 +31,22 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3" />
+          <entry key="java" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3" />
+          <entry key="JAVA" value="147" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="-187">
               <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="44" />
             </state>
           </provider>
@@ -61,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sort/Bubble.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="85">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -86,6 +86,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/sort/MergeSort.java" />
+        <option value="$PROJECT_DIR$/src/sort/Bubble.java" />
       </list>
     </option>
   </component>
@@ -118,6 +119,11 @@
             <path>
               <item name="SortAlgorithms" type="b2602c69:ProjectViewProjectNode" />
               <item name="SortAlgorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="arquivos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SortAlgorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SortAlgorithms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -136,7 +142,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558394633663" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558394754285" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -177,12 +183,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558392917538</updated>
-      <workItem from="1558392925305" duration="1647000" />
+      <workItem from="1558392925305" duration="1954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1647000" />
+    <option name="totallyTimeSpent" value="1954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
@@ -230,6 +236,9 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/out/production/SortAlgorithms/Main.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sort/Merge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -237,20 +246,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/SortAlgorithms/Main.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sort/Bubble.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="-187">
+          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/sort/Bubble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="44" />
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
