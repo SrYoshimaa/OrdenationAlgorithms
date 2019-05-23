@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -24,16 +25,21 @@ public class Main {
 
         // Quick Sort - Fim
 
-        try{
+        ArrayList<Float> numeros = new ArrayList<Float>();
+
+        try {
             BufferedReader br = new BufferedReader(new FileReader("./arquivos/teste.txt"));
-            while(br.ready()){
-                String linha = br.readLine();
-                System.out.println(linha);
+            while (br.ready()) {
+                Float linha = Float.parseFloat(br.readLine());
+                numeros.add(linha);
             }
-        }catch(IOException ioe){
+        } catch (IOException ioe) {
             ioe.printStackTrace();
 
         }
-
+        System.out.println(numeros);
+        numeros.set(2,(float) 9.12);        // Seta o valor no arrayList com base no index e o valor passado.
+        System.out.println(numeros);
+        System.out.println(numeros.get(0));  // Pegar numero do arrayList com base no index passado no .get()
     }
 }
