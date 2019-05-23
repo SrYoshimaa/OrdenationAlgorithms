@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 public class Main {
 
@@ -24,16 +25,19 @@ public class Main {
 
         // Quick Sort - Fim
 
+        ArrayList<Float> numeros = new ArrayList<Float> ();
+
         try{
             BufferedReader br = new BufferedReader(new FileReader("./arquivos/teste.txt"));
             while(br.ready()){
-                String linha = br.readLine();
-                System.out.println(linha);
+                Float linha = Float.parseFloat(br.readLine());
+                numeros.add(linha);
             }
         }catch(IOException ioe){
             ioe.printStackTrace();
 
         }
 
+        System.out.println(numeros);
     }
 }
