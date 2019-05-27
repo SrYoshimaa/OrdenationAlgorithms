@@ -1,6 +1,8 @@
 package sortings;
 
+import comparisons.Comparables;
+
 public interface Sort <T> {
 
-    long sort(T array[], Comparable<T> comparable);
+    long sort(T array[], Comparables<T> comparables);
 }

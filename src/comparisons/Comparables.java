@@ -1,6 +1,7 @@
 package comparisons;
 
-public interface NumberComparable<T> {
+public interface Comparables<T> {
 
     Double compare(T a, T b);
+
 }
