@@ -16,11 +16,11 @@ public class QuickSort<T> implements Sort <T>{
 			if (Comparables >= comparables)
 				return start;
 
-		// pick the pivot
+		// Define o Pivo
 		int middle = Comparables + (comparables - Comparables) / 2;
 		int pivot = array[middle];
 
-		// make left < pivot and right > pivot
+		// Define left < pivot e right > pivot
 		int i = Comparables, j = comparables;
 		while (i <= j) {
 			while (array[i] < pivot) {
