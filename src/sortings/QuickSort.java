@@ -7,43 +7,47 @@ public class QuickSort<T> implements Sort <T>{
     @Override
     public long sort(T[] array, Comparables<T> comparables) {
 
+		long start = System.currentTimeMillis();
+		
 
-        return 0;
+			if (array == null || array.length == 0)
+				return start;
+
+			if (Comparables >= comparables)
+				return start;
+
+		// pick the pivot
+		int middle = Comparables + (comparables - Comparables) / 2;
+		int pivot = array[middle];
+
+		// make left < pivot and right > pivot
+		int i = Comparables, j = comparables;
+		while (i <= j) {
+			while (array[i] < pivot) {
+				i++;
+			}
+
+			while (array[j] > pivot) {
+				j--;
+			}
+
+			if (i <= j) {
+				int temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
+				i++;
+				j--;
+			}
+		}
+
+		// recursively sort two sub parts
+		if (Comparables < j)
+			quickSort(array, Comparables, j);
+
+		if (comparables > i)
+			quickSort(array, i, comparables);
+
+
+        return System.currentTimeMillis() - start;
     }
 }
-
-/*public static void main() {
-
-	int vetor[]= { 100, 15, 65, 65, 76, 3, 4, 6, 8, 89 };
-	quickSort(vetor, 0, vetor.length-1);
-
-
-	public static  quickSort(int v[]; int esquerda; int direita)
-	int esq = esquerda;
-	int dir = direita;
-	int pivo = v[(esq + dir) % 2];
-	int troca;
-
-	while (esq <= dir) {
-		while (v[esq] < pivo) {
-			esq = esq + 1;
-		}
-		while (v[dir] > pivo) {
-			dir = dir - 1;
-		}
-		if (esq <= dir) {
-			troca = v[esq];
-			v[esq] = v[dir];
-			v[dir] = troca;
-			esq = esq + 1;
-			dir = dir - 1;
-		}
-	}
-	if (dir > esquerda)
-	quickSort(v, esquerda, dir);
-
-	if(esq < direita)
-	quickSort(v, esq, direita);
-
-}
-*/
