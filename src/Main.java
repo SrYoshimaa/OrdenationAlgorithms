@@ -4,6 +4,7 @@ import comparisons.number.NumberDEComparables;
 import comparisons.text.TextASComparables;
 import comparisons.text.TextDEComparables;
 import sortings.Bubble;
+import sortings.Insertion;
 
 import java.io.*;
 
@@ -80,6 +81,13 @@ public class Main {
 
         // Insert Sort - Inicio
 
+        Double arrayInsert[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
+
+        Insertion <Double> ii = new Insertion<Double>();
+
+        ii.sort(arrayInsert, numAsComp);
+
+
         // Insert Sort - Fim
 
         // Selection Sort - Inicio
@@ -94,10 +102,5 @@ public class Main {
 
         // Quick Sort - Fim
 
-
-
-
     }
-
-
 }
