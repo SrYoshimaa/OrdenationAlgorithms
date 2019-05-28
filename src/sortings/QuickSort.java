@@ -1,4 +1,4 @@
-package sortings;
+/*package sortings;
 
 import comparisons.Comparables;
 
@@ -51,3 +51,4 @@ public class QuickSort<T> implements Sort <T>{
         return System.currentTimeMillis() - start;
     }
 }
+*/
