@@ -1,6 +1,6 @@
 import comparisons.Comparables;
-import comparisons.numbers.NumberASComparables;
-import comparisons.numbers.NumberDEComparables;
+import comparisons.number.NumberASComparables;
+import comparisons.number.NumberDEComparables;
 import comparisons.text.TextASComparables;
 import comparisons.text.TextDEComparables;
 import sortings.Bubble;
@@ -12,20 +12,33 @@ public class Main {
     public static void main(String[] args) {
         //Instâncias
 
+            //Sorts
+
+                //Bubble
+                Bubble <Double> bbD = new Bubble<Double>();
+
+                Bubble <String> bbS = new Bubble<String>();
+
             //Comparações
 
                 //Números
-                Comparables<Double> numDeComp = new NumberDEComparables();
-                Comparables<Double> numAsComp = new NumberASComparables();
-                Comparables<String> textDeComp = new TextDEComparables();
-                Comparables<String> textAsComp = new TextASComparables();
+
+                    //Decrescente
+                    Comparables<Double> numDeComp = new NumberDEComparables();
+
+                    //Crescente
+                    Comparables<Double> numAsComp = new NumberASComparables();
+
+                //Texto
+
+                    //Decrescente
+                    Comparables<String> textDeComp = new TextDEComparables();
+
+                    //Crescente
+                    Comparables<String> textAsComp = new TextASComparables();
 
 
-
-
-
-        //ArrayList<Float> numeros = new ArrayList<Float>();
-
+        //Leitor do arquivo numeros_100000.txt
         Double[] numeros = new Double[100000];
         int aux = 0;
         try {
@@ -39,40 +52,25 @@ public class Main {
             ioe.printStackTrace();
 
         }
-        /*
-        ArrayList<Float> numeros = new ArrayList<Float>();
-
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("./arquivos/teste.txt"));
-            while (br.ready()) {
-                Float linha = Float.parseFloat(br.readLine());
-                numeros.add(linha);
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-
-        }
-        */
-
-        /*
-        System.out.println(numeros);
-        numeros.set(2,(float) 9.12);        // Seta o valor no arrayList com base no index e o valor passado.
-        System.out.println(numeros);
-        System.out.println(numeros.get(0));  // Pegar numero do arrayList com base no index passado no .get()
-        */
 
         // Bubble Sort - Inicio
 
-        // Vetor de Teste
+        // Vetores de teste
+        Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         String array[] = {"luan","bruna","carlos","lucas","andre"};
-        Bubble <Double> bbD = new Bubble<Double>();
 
-        Bubble <String> bb = new Bubble<String>();
 
 
         //bb.sort(numeros, numDeComp);
 
-        bb.sort(array, textAsComp);
+        //bbD.sort(array2, numDeComp);
+
+        //bbD.sort(array2, numAsComp);
+
+        //bbS.sort(array, textAsComp);
+
+        //bbS.sort(array, textDeComp);
+
 
 
 

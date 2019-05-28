@@ -6,12 +6,9 @@ public class TextDEComparables implements Comparables<String> {
 
 
     @Override
-    public Double compare(String a, String b) {
-        if (a.compareTo(b) > 0){
-            return 1.0;
-        }
-        else{
-            return -1.0;
-        }
+    public int compare(String a, String b) {
+
+        return b.compareTo(a);
+
     }
 }
