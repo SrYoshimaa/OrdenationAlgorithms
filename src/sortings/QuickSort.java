@@ -2,48 +2,46 @@ package sortings;
 
 import comparisons.Comparables;
 
+
 public class QuickSort<T> implements Sort <T>{
 
     @Override
-    public long sort(T[] array, Comparables<T> comparables) {
+    public long sort(T array[], Comparables<T> comparables) {
+
+		long start = System.currentTimeMillis();
 
 
-        return 0;
+
+
+
+        return System.currentTimeMillis() - start;
+    }
+    public void quickSort(T array[], int p, int r){
+        if(p < r){
+//            q = Particao(T array[], int p, int r);
+        }
+
+
+
+    }
+
+    public long Particao(T array[], int p, int r, Comparables<T> comparables ){
+
+       T x = array[r];
+       int i = p -1;
+       T aux;
+
+       for(int j = p; j <= r - 1; j++){
+           if(comparables.compare(array[j], x) >= 0){
+               i = i + 1;
+               aux = array[i];
+               array[i] = array [j];
+               array[j] = aux;
+           }
+            aux = array[i + 1];
+           array[i + 1] = array[r];
+           array[r] = aux;
+       }
+       return i+1;
     }
 }
-
-/*public static void main() {
-
-	int vetor[]= { 100, 15, 65, 65, 76, 3, 4, 6, 8, 89 };
-	quickSort(vetor, 0, vetor.length-1);
-
-
-	public static  quickSort(int v[]; int esquerda; int direita)
-	int esq = esquerda;
-	int dir = direita;
-	int pivo = v[(esq + dir) % 2];
-	int troca;
-
-	while (esq <= dir) {
-		while (v[esq] < pivo) {
-			esq = esq + 1;
-		}
-		while (v[dir] > pivo) {
-			dir = dir - 1;
-		}
-		if (esq <= dir) {
-			troca = v[esq];
-			v[esq] = v[dir];
-			v[dir] = troca;
-			esq = esq + 1;
-			dir = dir - 1;
-		}
-	}
-	if (dir > esquerda)
-	quickSort(v, esquerda, dir);
-
-	if(esq < direita)
-	quickSort(v, esq, direita);
-
-}
-*/

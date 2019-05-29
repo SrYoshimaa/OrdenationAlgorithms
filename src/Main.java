@@ -5,7 +5,11 @@ import comparisons.text.TextASComparables;
 import comparisons.text.TextDEComparables;
 import sortings.Bubble;
 import sortings.Insertion;
+<<<<<<< HEAD
 import sortings.Merge;
+=======
+import sortings.Selection;
+>>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
 
 import java.io.*;
 
@@ -62,7 +66,7 @@ public class Main {
 
         // Vetores de teste
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
-        String array[] = {"luan","bruna","carlos","lucas","andre"};
+        //String array[] = {"luan","bruna","carlos","lucas","andre"};
 
         mg.sort(array2, numAsComp);
 
@@ -85,16 +89,25 @@ public class Main {
 
         // Insert Sort - Inicio
 
-        Double arrayInsert[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
+        /*Double arrayInsert[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
 
         Insertion <Double> ii = new Insertion<Double>();
 
+<<<<<<< HEAD
         //ii.sort(arrayInsert, numAsComp);
+=======
+        ii.sort(arrayInsert, numAsComp);*/
+>>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
 
 
         // Insert Sort - Fim
 
         // Selection Sort - Inicio
+        Double array[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
+
+        Selection<Double> s = new Selection<Double>();
+
+        s.sort(array, numAsComp);
 
         // Selection - Fim
 
