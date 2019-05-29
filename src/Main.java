@@ -3,13 +3,7 @@ import comparisons.number.NumberASComparables;
 import comparisons.number.NumberDEComparables;
 import comparisons.text.TextASComparables;
 import comparisons.text.TextDEComparables;
-import sortings.Bubble;
-import sortings.Insertion;
-<<<<<<< HEAD
-import sortings.Merge;
-=======
-import sortings.Selection;
->>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
+import sortings.*;
 
 import java.io.*;
 
@@ -27,6 +21,9 @@ public class Main {
 
                 //Merge
                 Merge<Double> mg = new Merge<Double>();
+
+                //Quicksort
+                QuickSort<Double> qs = new QuickSort<Double>();
 
             //Comparações
 
@@ -68,9 +65,11 @@ public class Main {
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         //String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-        mg.sort(array2, numAsComp);
+        //mg.sort(array2, numAsComp);
 
-        //bb.sort(numeros, numDeComp);
+        //bbD.sort(numeros, numDeComp);
+
+        //bbD.sort(numeros, numAsComp);
 
         //bbD.sort(array2, numDeComp);
 
@@ -93,11 +92,10 @@ public class Main {
 
         Insertion <Double> ii = new Insertion<Double>();
 
-<<<<<<< HEAD
+
         //ii.sort(arrayInsert, numAsComp);
-=======
+
         ii.sort(arrayInsert, numAsComp);*/
->>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
 
 
         // Insert Sort - Fim
@@ -107,7 +105,7 @@ public class Main {
 
         Selection<Double> s = new Selection<Double>();
 
-        s.sort(array, numAsComp);
+        //s.sort(array, numAsComp);
 
         // Selection - Fim
 
@@ -117,6 +115,7 @@ public class Main {
 
         // Quick Sort - Inicio
 
+        qs.sort(array2, numAsComp);
         // Quick Sort - Fim
 
     }

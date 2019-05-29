@@ -9,9 +9,9 @@ public class QuickSort<T> implements Sort <T>{
     public long sort(T array[], Comparables<T> comparables) {
 
 		long start = System.currentTimeMillis();
+        quickSort(array, 0, array.length, comparables);
 
-
-        new QuickSort();
+        //new QuickSort();
 
 
         return System.currentTimeMillis() - start;
