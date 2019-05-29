@@ -5,7 +5,11 @@ import comparisons.text.TextASComparables;
 import comparisons.text.TextDEComparables;
 import sortings.Bubble;
 import sortings.Insertion;
+<<<<<<< HEAD
+import sortings.Merge;
+=======
 import sortings.Selection;
+>>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
 
 import java.io.*;
 
@@ -20,6 +24,9 @@ public class Main {
                 Bubble <Double> bbD = new Bubble<Double>();
 
                 Bubble <String> bbS = new Bubble<String>();
+
+                //Merge
+                Merge<Double> mg = new Merge<Double>();
 
             //Comparações
 
@@ -61,7 +68,7 @@ public class Main {
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         //String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-
+        mg.sort(array2, numAsComp);
 
         //bb.sort(numeros, numDeComp);
 
@@ -86,7 +93,11 @@ public class Main {
 
         Insertion <Double> ii = new Insertion<Double>();
 
+<<<<<<< HEAD
+        //ii.sort(arrayInsert, numAsComp);
+=======
         ii.sort(arrayInsert, numAsComp);*/
+>>>>>>> 51e545e20afade034f37ae128c1d1ad85982574e
 
 
         // Insert Sort - Fim
