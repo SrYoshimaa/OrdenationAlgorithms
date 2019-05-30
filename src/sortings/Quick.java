@@ -1,26 +1,26 @@
-
 package sortings;
 
 import comparisons.Comparables;
 
-public class Quick<T> {
+public class Quick<T> implements Sort<T>{
 
     private T[] array;
     private Comparables<T> comparables;
 
-    public Quick(T[] array, Comparables<T> comparables) {
+    public long sort(T[] array, Comparables<T> comparables) {
+        long start = System.currentTimeMillis();
         this.array = array;
         this.comparables = comparables;
+        quick(0, this.array.length - 1);
+        return System.currentTimeMillis() - start;
     }
-
-    public void sort(int p, int r) {
+    public void quick(int p, int r) {
         if (p < r) {
             int q = partition(p, r);
-            sort(p, q - 1);
-            sort(q + 1, r);
+            quick(p, q - 1);
+            quick(q + 1, r);
         }
     }
-
     private int partition(int p, int r) {
         T x = this.array[r];
         int i = p - 1;
@@ -36,16 +36,5 @@ public class Quick<T> {
         this.array[i + 1] = this.array[r];
         this.array[r] = temp;
         return i + 1;
-    }
-    public void print(boolean show){
-        long d1 = System.currentTimeMillis();
-        System.out.println("QuickSort:");
-        sort(0, this.array.length - 1);
-        if (show) {
-            for (int i = 0; i < this.array.length; i++){
-                System.out.println(this.array[i]);
-            }
-        }
-        System.out.println("Time: "+ ((System.currentTimeMillis() - d1)/1000.0000) + " Seconds.");
     }
 }

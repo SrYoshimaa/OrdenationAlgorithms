@@ -24,9 +24,8 @@ public class Main {
 
                 Merge<String> mergeString = new Merge<String>();
 
-
-
-        //Quicksort
+                //Quicksort
+                Quick<Double> quickDouble = new Quick<Double>();
 
             //Comparações
 
@@ -68,22 +67,22 @@ public class Main {
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-        //mergeDouble.sort(array2, numAsComp);
+        //mergeDouble.quick(array2, numAsComp);
 
-        mergeString.sort(array, textAsComp);
+        //mergeString.sort(array, textAsComp);
 
 
-        //bubbleDouble.sort(numeros, numDeComp);
+        //bubbleDouble.quick(numeros, numDeComp);
 
-        //bubbleDouble.sort(numeros, numAsComp);
+        //bubbleDouble.quick(numeros, numAsComp);
 
-        //bubbleDouble.sort(array2, numDeComp);
+        //bubbleDouble.quick(array2, numDeComp);
 
-        //bubbleDouble.sort(array2, numAsComp);
+        //bubbleDouble.quick(array2, numAsComp);
 
-        //bubbleString.sort(array, textAsComp);
+        //bubbleString.quick(array, textAsComp);
 
-        //bubbleString.sort(array, textDeComp);
+        //bubbleString.quick(array, textDeComp);
 
 
 
@@ -99,9 +98,9 @@ public class Main {
         Insertion <Double> ii = new Insertion<Double>();
 
 
-        //ii.sort(arrayInsert, numAsComp);
+        //ii.quick(arrayInsert, numAsComp);
 
-        ii.sort(arrayInsert, numAsComp);*/
+        ii.quick(arrayInsert, numAsComp);*/
 
 
         // Insert Sort - Fim
@@ -111,21 +110,21 @@ public class Main {
 
         Selection<Double> s = new Selection<Double>();
 
-        //s.sort(array, numAsComp);
+        //s.quick(array, numAsComp);
 
         // Selection - Fim
 
         // Merge Sort - Inicio
 
-        //Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
-        //quickSortAsc.print(true);
-
         // Merge Sort - Fim
+
+        //quickDouble.sort(array2, numAsComp);
+        System.out.println(quickDouble.sort(numeros, numAsComp));
 
         // Quick Sort - Inicio
 
 
-        //qs.sort(array2, numAsComp);
+        //qs.quick(array2, numAsComp);
         // Quick Sort - Fim
 
     }
