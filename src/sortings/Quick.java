@@ -14,13 +14,13 @@ public class Quick<T> {
 
     public void sort(int p, int r) {
         if (p < r) {
-            int q = particao(p, r);
+            int q = partition(p, r);
             sort(p, q - 1);
             sort(q + 1, r);
         }
     }
 
-    private int particao(int p, int r) {
+    private int partition(int p, int r) {
         T x = this.array[r];
         int i = p - 1;
         for (int j = p; j <= r - 1; j++) {
@@ -38,7 +38,7 @@ public class Quick<T> {
     }
     public void print(boolean show){
         long d1 = System.currentTimeMillis();
-        System.out.println("Quick Sort:");
+        System.out.println("QuickSort:");
         sort(0, this.array.length - 1);
         if (show) {
             for (int i = 0; i < this.array.length; i++){
