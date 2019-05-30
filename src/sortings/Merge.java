@@ -2,7 +2,7 @@ package sortings;
 
 import comparisons.Comparables;
 
-public  class Merge <T> {
+public  class Merge <T> implements Sort<T> {
 
     public long sort(T array[], Comparables<T> comparables){
 
@@ -27,28 +27,36 @@ public  class Merge <T> {
     }
 
     public void merge(T array[], int p,int q, int r, Comparables<T> comparables){
-        int n1 = q - p;
+        int n1 = q - p + 1;
         int n2 = r - q;
 
-        T L[] = (T[]) new Object[n1];
-        T R[] = (T[]) new Object[n2];
+        T L[] = (T[]) new Object[n1 + 1];
+        T R[] = (T[]) new Object[n2 + 1];
 
-        for(int i = 0; i <= n1-1; i++){
-            L[i] = array[p+i];
+        for(int i = 1; i <= n1; i++){
+            L[i] = array[p+i - 1];
         }
 
-        for (int j = 0; j <= n2 -1; j++){
+        for (int j = 1; j <= n2; j++){
             R[j] = array[q+j];
         }
 
-        int i = 0;
-        int j = 0;
+        int i = 1;
+        int j = 1;
 
-        for (int k = p; k < r; k++){
+        for (int k = p; k <= r; k++){
 
             if ( i < L.length  && j < R.length) {
 
                 if (comparables.compare(R[j], L[i]) > 0) {
+                    array[k] = L[i];
+                    i = i + 1;
+                } else {
+                    array[k] = R[j];
+                    j = j + 1;
+                }
+            } else {
+                if (i < L.length) {
                     array[k] = L[i];
                     i = i + 1;
                 } else {

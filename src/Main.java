@@ -15,14 +15,18 @@ public class Main {
             //Sorts
 
                 //Bubble
-                Bubble <Double> bbD = new Bubble<Double>();
+                Bubble <Double> bubbleDouble = new Bubble<Double>();
 
-                Bubble <String> bbS = new Bubble<String>();
+                Bubble <String> bubbleString = new Bubble<String>();
 
                 //Merge
-                Merge<Double> mg = new Merge<Double>();
+                Merge<Double> mergeDouble = new Merge<Double>();
 
-                //Quicksort
+                Merge<String> mergeString = new Merge<String>();
+
+
+
+        //Quicksort
 
             //Comparações
 
@@ -62,21 +66,24 @@ public class Main {
 
         // Vetores de teste
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
-        //String array[] = {"luan","bruna","carlos","lucas","andre"};
+        String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-        //mg.sort(array2, numAsComp);
+        //mergeDouble.sort(array2, numAsComp);
 
-        bbD.sort(numeros, numDeComp);
+        mergeString.sort(array, textAsComp);
 
-        //bbD.sort(numeros, numAsComp);
 
-        //bbD.sort(array2, numDeComp);
+        //bubbleDouble.sort(numeros, numDeComp);
 
-        //bbD.sort(array2, numAsComp);
+        //bubbleDouble.sort(numeros, numAsComp);
 
-        //bbS.sort(array, textAsComp);
+        //bubbleDouble.sort(array2, numDeComp);
 
-        //bbS.sort(array, textDeComp);
+        //bubbleDouble.sort(array2, numAsComp);
+
+        //bubbleString.sort(array, textAsComp);
+
+        //bubbleString.sort(array, textDeComp);
 
 
 
@@ -100,7 +107,7 @@ public class Main {
         // Insert Sort - Fim
 
         // Selection Sort - Inicio
-        Double array[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
+        //Double array[] = {2.45, 7.87, 10.45, 1.123, 0.132, 787.86, 1.76};
 
         Selection<Double> s = new Selection<Double>();
 
@@ -109,17 +116,16 @@ public class Main {
         // Selection - Fim
 
         // Merge Sort - Inicio
-        Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
-        quickSortAsc.print(true);
+
+        //Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
+        //quickSortAsc.print(true);
 
         // Merge Sort - Fim
 
         // Quick Sort - Inicio
 
-<<<<<<< HEAD
+
         //qs.sort(array2, numAsComp);
-=======
->>>>>>> 678ddc6df8e125a1f20d9ee8d94f4b035572191c
         // Quick Sort - Fim
 
     }
