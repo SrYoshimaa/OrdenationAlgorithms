@@ -1,8 +1,8 @@
 import comparisons.Comparables;
 import comparisons.number.NumberASComparables;
-import comparisons.number.NumberDEComparables;
+import comparisons.number.NumberDESComparables;
 import comparisons.text.TextASComparables;
-import comparisons.text.TextDEComparables;
+import comparisons.text.TextDESComparables;
 import sortings.*;
 
 import java.io.*;
@@ -45,7 +45,7 @@ public class Main {
                     //Números
 
                         //Decrescente
-                        Comparables<Double> numDeComp = new NumberDEComparables();
+                        Comparables<Double> numDeComp = new NumberDESComparables();
 
                         //Crescente
                         Comparables<Double> numAsComp = new NumberASComparables();
@@ -53,7 +53,7 @@ public class Main {
                     //Texto
 
                         //Decrescente
-                        Comparables<String> textDeComp = new TextDEComparables();
+                        Comparables<String> textDeComp = new TextDESComparables();
 
                         //Crescente
                         Comparables<String> textAsComp = new TextASComparables();
