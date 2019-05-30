@@ -1,3 +1,5 @@
+package comparisons.object;
+
 public class Location {
 
     private Double longitude;

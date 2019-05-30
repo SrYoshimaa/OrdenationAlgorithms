@@ -2,7 +2,7 @@ package comparisons.text;
 
 import comparisons.Comparables;
 
-public class TextDEComparables implements Comparables<String> {
+public class TextDESComparables implements Comparables<String> {
 
 
     @Override

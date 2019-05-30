@@ -1,0 +1,3 @@
+250ms - QuickSort Numeros100k Asc 
+782ms - QuickSort Numeros1m Asc 
+1031ms - QuickSort Palavras1m Asc 
