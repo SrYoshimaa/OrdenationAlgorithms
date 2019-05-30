@@ -1,6 +1,8 @@
 import comparisons.Comparables;
 import comparisons.number.NumberASComparables;
 import comparisons.number.NumberDESComparables;
+import comparisons.object.Location;
+import comparisons.object.ObjectDEComparables;
 import comparisons.text.TextASComparables;
 import comparisons.text.TextDESComparables;
 import sortings.*;
@@ -10,8 +12,6 @@ import java.io.*;
 public class Main {
 
     public static void main(String[] args) throws IOException  {
-
-        Double [] quickSortNumber100k;
 
         FileWriter fileWriter = new FileWriter("./arquivos/tempos.txt");
 
@@ -57,6 +57,13 @@ public class Main {
 
                         //Crescente
                         Comparables<String> textAsComp = new TextASComparables();
+
+                    //Objetos
+                        //Decrescente
+                        Comparables<Location> objDESCCom = new ObjectDEComparables();
+                        //Crescente
+                        Comparables<Location> objASCCom = new ObjectDEComparables();
+
 
 
         //Leitor do arquivo numeros_100000.txt
@@ -171,12 +178,7 @@ public class Main {
 
         // Quick Sort - Inicio
 
-        quickSortNumber100k = numeros100k;
 
-        fileWriter.write(String.valueOf(quickDouble.sort(quickSortNumber100k, numAsComp)) + "ms - QuickSort Numeros100k Asc \n");
-        fileWriter.write(String.valueOf(quickDouble.sort(numeros1m, numAsComp))+ "ms - QuickSort Numeros1m Asc \n");
-        fileWriter.write(String.valueOf(quickString.sort(palavras100k, textAsComp))+ "ms - QuickSort Palavras1k Asc \n");
-        fileWriter.write(String.valueOf(quickString.sort(palavras1m, textAsComp))+ "ms - QuickSort Palavras1m Asc \n");
         
         // Quick Sort - Fim
 
