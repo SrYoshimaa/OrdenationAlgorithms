@@ -24,7 +24,6 @@ public class Main {
 
                 //Quicksort
 
-
             //Comparações
 
                 //Números
@@ -110,6 +109,8 @@ public class Main {
         // Selection - Fim
 
         // Merge Sort - Inicio
+        Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
+        quickSortAsc.print(true);
 
         // Merge Sort - Fim
 
