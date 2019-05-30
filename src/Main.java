@@ -23,7 +23,6 @@ public class Main {
                 Merge<Double> mg = new Merge<Double>();
 
                 //Quicksort
-                QuickSort<Double> qs = new QuickSort<Double>();
 
             //Comparações
 
@@ -110,12 +109,17 @@ public class Main {
         // Selection - Fim
 
         // Merge Sort - Inicio
+        Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
+        quickSortAsc.print(true);
 
         // Merge Sort - Fim
 
         // Quick Sort - Inicio
 
+<<<<<<< HEAD
         //qs.sort(array2, numAsComp);
+=======
+>>>>>>> 678ddc6df8e125a1f20d9ee8d94f4b035572191c
         // Quick Sort - Fim
 
     }
