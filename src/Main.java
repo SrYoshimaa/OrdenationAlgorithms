@@ -67,7 +67,7 @@ public class Main {
 
         //mg.sort(array2, numAsComp);
 
-        //bbD.sort(numeros, numDeComp);
+        bbD.sort(numeros, numDeComp);
 
         //bbD.sort(numeros, numAsComp);
 
@@ -115,7 +115,7 @@ public class Main {
 
         // Quick Sort - Inicio
 
-        qs.sort(array2, numAsComp);
+        //qs.sort(array2, numAsComp);
         // Quick Sort - Fim
 
     }
