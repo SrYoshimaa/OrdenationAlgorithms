@@ -2,23 +2,21 @@ package sortings;
 
 import comparisons.Comparables;
 
-
-
-/*public class QuickSort<T> {
+public class Quick<T> {
 
     private T[] objeto;
-    private Compare<T> compare;
+    private Comparables<T> comparables;
 
-    public QuickSort(T[] objeto, Compare<T> compare) {
+    public Quick(T[] objeto, Comparables<T> comparables) {
         this.objeto = objeto;
-        this.compare = compare;
+        this.comparables = comparables;
     }
 
     public void sort(int p, int r) {
         if (p < r) {
             int q = particao(p, r);
-            sort(p, q-1);
-            sort(q+1, r);
+            sort(p, q - 1);
+            sort(q + 1, r);
         }
     }
 
@@ -26,7 +24,7 @@ import comparisons.Comparables;
         T x = this.objeto[r];
         int i = p - 1;
         for (int j = p; j <= r - 1; j++) {
-            if (compare.compareTo(this.objeto[j], x) <= 0) {
+            if (comparables.compare(this.objeto[j], x) <= 0) {
                 i = i + 1;
                 T temp = this.objeto[i];
                 this.objeto[i] = this.objeto[j];
@@ -38,5 +36,4 @@ import comparisons.Comparables;
         this.objeto[r] = temp;
         return i + 1;
     }
-
-}*/
+}
