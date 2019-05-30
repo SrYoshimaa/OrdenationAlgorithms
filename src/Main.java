@@ -24,9 +24,14 @@ public class Main {
 
                 Merge<String> mergeString = new Merge<String>();
 
+<<<<<<< HEAD
 
 
             //Quicksort
+=======
+                //Quicksort
+                Quick<Double> quickDouble = new Quick<Double>();
+>>>>>>> da07843fa79723aaf6c67bb8e16c54998d91274c
 
             //Comparações
 
@@ -83,22 +88,28 @@ public class Main {
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-        //mergeDouble.sort(array2, numAsComp);
+        //mergeDouble.quick(array2, numAsComp);
 
-        mergeString.sort(array, textAsComp);
+        //mergeString.sort(array, textAsComp);
 
 
+<<<<<<< HEAD
         //bubbleDouble.sort(numeros_100000, numDeComp);
 
         //bubbleDouble.sort(numeros_100000, numAsComp);
+=======
+        //bubbleDouble.quick(numeros, numDeComp);
 
-        //bubbleDouble.sort(array2, numDeComp);
+        //bubbleDouble.quick(numeros, numAsComp);
+>>>>>>> da07843fa79723aaf6c67bb8e16c54998d91274c
 
-        //bubbleDouble.sort(array2, numAsComp);
+        //bubbleDouble.quick(array2, numDeComp);
 
-        //bubbleString.sort(array, textAsComp);
+        //bubbleDouble.quick(array2, numAsComp);
 
-        //bubbleString.sort(array, textDeComp);
+        //bubbleString.quick(array, textAsComp);
+
+        //bubbleString.quick(array, textDeComp);
 
 
 
@@ -114,9 +125,9 @@ public class Main {
         Insertion <Double> ii = new Insertion<Double>();
 
 
-        //ii.sort(arrayInsert, numAsComp);
+        //ii.quick(arrayInsert, numAsComp);
 
-        ii.sort(arrayInsert, numAsComp);*/
+        ii.quick(arrayInsert, numAsComp);*/
 
 
         // Insert Sort - Fim
@@ -126,21 +137,27 @@ public class Main {
 
         Selection<Double> s = new Selection<Double>();
 
-        //s.sort(array, numAsComp);
+        //s.quick(array, numAsComp);
 
         // Selection - Fim
 
         // Merge Sort - Inicio
 
+<<<<<<< HEAD
         //Quick quickSortAsc = new Quick(numeros_100000, new NumberASComparables());
         //quickSortAsc.print(true);
 
+=======
+>>>>>>> da07843fa79723aaf6c67bb8e16c54998d91274c
         // Merge Sort - Fim
+
+        //quickDouble.sort(array2, numAsComp);
+        System.out.println(quickDouble.sort(numeros, numAsComp));
 
         // Quick Sort - Inicio
 
 
-        //qs.sort(array2, numAsComp);
+        //qs.quick(array2, numAsComp);
         // Quick Sort - Fim
 
     }
