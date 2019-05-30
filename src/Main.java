@@ -26,7 +26,7 @@ public class Main {
 
 
 
-        //Quicksort
+            //Quicksort
 
             //Comparações
 
@@ -48,13 +48,28 @@ public class Main {
 
 
         //Leitor do arquivo numeros_100000.txt
-        Double[] numeros = new Double[100000];
+        Double[] numeros_100000 = new Double[100000];
         int aux = 0;
         try {
             BufferedReader br = new BufferedReader(new FileReader("./arquivos/numeros_100000.txt"));
             while (br.ready()) {
                 Double linha = Double.parseDouble(br.readLine());
-                numeros[aux] = linha;
+                numeros_100000[aux] = linha;
+                aux = aux + 1;
+            }
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
+
+        }
+
+        //Leitor do arquivo numeros_100000.txt
+        Double[] palavras_100000 = new Double[100000];
+        int aux = 0;
+        try {
+            BufferedReader br = new BufferedReader(new FileReader("./arquivos/numeros_100000.txt"));
+            while (br.ready()) {
+                Double linha = Double.parseDouble(br.readLine());
+                numeros_100000[aux] = linha;
                 aux = aux + 1;
             }
         } catch (IOException ioe) {
@@ -73,9 +88,9 @@ public class Main {
         mergeString.sort(array, textAsComp);
 
 
-        //bubbleDouble.sort(numeros, numDeComp);
+        //bubbleDouble.sort(numeros_100000, numDeComp);
 
-        //bubbleDouble.sort(numeros, numAsComp);
+        //bubbleDouble.sort(numeros_100000, numAsComp);
 
         //bubbleDouble.sort(array2, numDeComp);
 
@@ -117,7 +132,7 @@ public class Main {
 
         // Merge Sort - Inicio
 
-        //Quick quickSortAsc = new Quick(numeros, new NumberASComparables());
+        //Quick quickSortAsc = new Quick(numeros_100000, new NumberASComparables());
         //quickSortAsc.print(true);
 
         // Merge Sort - Fim
