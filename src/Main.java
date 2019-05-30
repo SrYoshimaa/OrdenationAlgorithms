@@ -45,6 +45,8 @@ public class Main {
                     //Crescente
                     Comparables<String> textAsComp = new TextASComparables();
 
+                    
+
 
         //Leitor do arquivo numeros_100000.txt
         Double[] numeros = new Double[100000];
