@@ -1,8 +1,8 @@
 import comparisons.Comparables;
 import comparisons.number.NumberASComparables;
-import comparisons.number.NumberDEComparables;
+import comparisons.number.NumberDESComparables;
 import comparisons.text.TextASComparables;
-import comparisons.text.TextDEComparables;
+import comparisons.text.TextDESComparables;
 import sortings.*;
 
 import java.io.*;
@@ -32,15 +32,15 @@ public class Main {
                 //Números
 
                     //Decrescente
-                    Comparables<Double> numDeComp = new NumberDEComparables();
+                    Comparables<Double> numDescComp = new NumberDESComparables();
 
                     //Crescente
-                    Comparables<Double> numAsComp = new NumberASComparables();
+                    Comparables<Double> numAscComp = new NumberASComparables();
 
                 //Texto
 
                     //Decrescente
-                    Comparables<String> textDeComp = new TextDEComparables();
+                    Comparables<String> textDeComp = new TextDESComparables();
 
                     //Crescente
                     Comparables<String> textAsComp = new TextASComparables();
@@ -67,18 +67,18 @@ public class Main {
         Double array2[] = {7.0,3.0,-9.0,4.0,9.0,4.8};
         String array[] = {"luan","bruna","carlos","lucas","andre"};
 
-        //mergeDouble.quick(array2, numAsComp);
+        //mergeDouble.quick(array2, numAscComp);
 
         //mergeString.sort(array, textAsComp);
 
 
-        //bubbleDouble.quick(numeros, numDeComp);
+        //bubbleDouble.quick(numeros, numDescComp);
 
-        //bubbleDouble.quick(numeros, numAsComp);
+        //bubbleDouble.quick(numeros, numAscComp);
 
-        //bubbleDouble.quick(array2, numDeComp);
+        //bubbleDouble.quick(array2, numDescComp);
 
-        //bubbleDouble.quick(array2, numAsComp);
+        //bubbleDouble.quick(array2, numAscComp);
 
         //bubbleString.quick(array, textAsComp);
 
@@ -98,9 +98,9 @@ public class Main {
         Insertion <Double> ii = new Insertion<Double>();
 
 
-        //ii.quick(arrayInsert, numAsComp);
+        //ii.quick(arrayInsert, numAscComp);
 
-        ii.quick(arrayInsert, numAsComp);*/
+        ii.quick(arrayInsert, numAscComp);*/
 
 
         // Insert Sort - Fim
@@ -110,7 +110,7 @@ public class Main {
 
         Selection<Double> s = new Selection<Double>();
 
-        //s.quick(array, numAsComp);
+        //s.quick(array, numAscComp);
 
         // Selection - Fim
 
@@ -118,13 +118,13 @@ public class Main {
 
         // Merge Sort - Fim
 
-        //quickDouble.sort(array2, numAsComp);
-        System.out.println(quickDouble.sort(numeros, numAsComp));
+        //quickDouble.sort(array2, numAscComp);
+        System.out.println("QuickSort numeros Crescente: " + quickDouble.sort(numeros, numAscComp));
 
         // Quick Sort - Inicio
 
 
-        //qs.quick(array2, numAsComp);
+        //qs.quick(array2, numAscComp);
         // Quick Sort - Fim
 
     }

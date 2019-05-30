@@ -2,7 +2,7 @@ package comparisons.number;
 
 import comparisons.Comparables;
 
-public class NumberDEComparables implements Comparables<Double> {
+public class NumberDESComparables implements Comparables<Double> {
 
     @Override
     public int compare(Double a, Double b) {
