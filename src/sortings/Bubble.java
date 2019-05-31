@@ -22,10 +22,6 @@ public class Bubble <T> implements Sort<T> {
 
             }
         }
-        for(i = 0; i < array.length; i++){
-            System.out.println(array[i]);
-        }
-
         return System.currentTimeMillis() - start;
     }
 

@@ -2,9 +2,9 @@ package comparisons.object;
 
 import comparisons.Comparables;
 
-public class ObjectDEComparables implements Comparables<Location> {
+public class ObjectDEComparables implements Comparables<Locations> {
     @Override
-    public int compare(Location a, Location b) {
+    public int compare(Locations a, Locations b) {
         if (a.getLatitude() > b.getLatitude()) {
             return -1;
         }

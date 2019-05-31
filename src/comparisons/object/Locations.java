@@ -1,4 +1,6 @@
-public class Location {
+package comparisons.object;
+
+public class Locations {
 
     private Double longitude;
 
