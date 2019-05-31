@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 228955ms - BubbleSort Objetos100k Asc 
+=======
+441ms - QuickSort Numeros100k Asc 
+1681ms - QuickSort Numeros1m Asc 
+167ms - QuickSort Palavras1k Asc 
+1390ms - QuickSort Palavras1m Asc 
+>>>>>>> 8b1578bbc85a1035fb85e2ee43cb7e0064da7737

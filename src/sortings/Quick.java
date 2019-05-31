@@ -38,3 +38,14 @@ public class Quick<T> implements Sort<T>{
         return i + 1;
     }
 }
+        /*
+        Double [] quickSortNumber100k;
+        Double [] quickSortNumber1m;
+        quickSortNumber100k = numeros100k;
+        quickSortNumber1m = numeros1m;
+
+        fileWriter.write(String.valueOf(quickDouble.sort(quickSortNumber100k, numAsComp)) + "ms - QuickSort Numeros100k Asc \n");
+        fileWriter.write(String.valueOf(quickDouble.sort(quickSortNumber1m, numAsComp))+ "ms - QuickSort Numeros1m Asc \n");
+        fileWriter.write(String.valueOf(quickString.sort(palavras100k, textAsComp))+ "ms - QuickSort Palavras1k Asc \n");
+        fileWriter.write(String.valueOf(quickString.sort(palavras1m, textAsComp))+ "ms - QuickSort Palavras1m Asc \n");
+        */
