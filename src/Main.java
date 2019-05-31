@@ -1,18 +1,13 @@
 import comparisons.Comparables;
 import comparisons.number.NumberASComparables;
 import comparisons.number.NumberDESComparables;
-<<<<<<< HEAD
 import comparisons.object.Locations;
 import comparisons.object.ObjectASComparables;
-=======
-import comparisons.object.Location;
->>>>>>> 8b1578bbc85a1035fb85e2ee43cb7e0064da7737
 import comparisons.object.ObjectDEComparables;
 import comparisons.text.TextASComparables;
 import comparisons.text.TextDESComparables;
 import sortings.*;
 import tools.SortFiles;
-
 import java.io.*;
 
 public class Main {
@@ -23,119 +18,7 @@ public class Main {
 
         SortFiles sortFiles = new SortFiles();
 
-        //Instâncias
 
-<<<<<<< HEAD
-        //Sorts
-=======
-            //Sorts
-
-                //Bubble
-                Bubble <Double> bubbleDouble = new Bubble<Double>();
-                Bubble <String> bubbleString = new Bubble<String>();
-
-                //Insertion
-                Insertion <Double> insertDouble = new Insertion<Double>();
-                Insertion <String> insertString = new Insertion<String>();
-
-                //Insertion
-                Selection <Double> selectionDouble = new Selection<Double>();
-                Selection <String> selectionString = new Selection<String>();
-
-                //Merge
-                Merge<Double> mergeDouble = new Merge<Double>();
-                Merge<String> mergeString = new Merge<String>();
-
-                //Quicksort
-                Quick<Double> quickDouble = new Quick<Double>();
-                Quick<String> quickString = new Quick<String>();
-
-                //Comparações
-
-                    //Números
-
-                        //Decrescente
-                        Comparables<Double> numDeComp = new NumberDESComparables();
-
-                        //Crescente
-                        Comparables<Double> numAsComp = new NumberASComparables();
-
-                    //Texto
-
-                        //Decrescente
-                        Comparables<String> textDeComp = new TextDESComparables();
-
-                        //Crescente
-                        Comparables<String> textAsComp = new TextASComparables();
-
-                    //Objetos
-                        //Decrescente
-                        Comparables<Location> objDESCCom = new ObjectDEComparables();
-                        //Crescente
-                        Comparables<Location> objASCCom = new ObjectDEComparables();
-
-
-
-        //Leitor do arquivo numeros_100000.txt
-        Double[] numeros100k = new Double[100000];
-        int aux = 0;
-        try {
-            BufferedReader br = new BufferedReader(new FileReader("./arquivos/numeros_100000.txt"));
-            while (br.ready()) {
-                Double linha = Double.parseDouble(br.readLine());
-                numeros100k[aux] = linha;
-                aux = aux + 1;
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-
-        }
-
-        //Leitor do arquivo numeros_1000000.txt
-        Double[] numeros1m = new Double[1000000];
-        int aux2 = 0;
-        try {
-            BufferedReader br2 = new BufferedReader(new FileReader("./arquivos/numeros_1000000.txt"));
-            while (br2.ready()) {
-                Double linha2 = Double.parseDouble(br2.readLine());
-                numeros1m[aux2] = linha2;
-                aux2 = aux2 + 1;
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-
-        }
-
-        //Leitor do arquivo palavras_100000.txt
-        String[] palavras100k = new String[100000];
-        int aux3 = 0;
-        try {
-            BufferedReader br3 = new BufferedReader(new FileReader("./arquivos/palavras_100000.txt"));
-            while (br3.ready()) {
-                String linha3 = br3.readLine();
-                palavras100k[aux3] = linha3;
-                aux3 = aux3 + 1;
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-
-        }
-
-        //Leitor do arquivo palavras_100000.txt
-        String[] palavras1m = new String[1000000];
-        int aux4 = 0;
-        try {
-            BufferedReader br4 = new BufferedReader(new FileReader("./arquivos/palavras_1000000.txt"));
-            while (br4.ready()) {
-                String linha4 = br4.readLine();
-                palavras1m[aux4] = linha4;
-                aux4 = aux4 + 1;
-            }
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
-
-        }
->>>>>>> 8b1578bbc85a1035fb85e2ee43cb7e0064da7737
 
         //Bubble
         Bubble <Double> bubbleDouble = new Bubble<Double>();
@@ -277,7 +160,6 @@ public class Main {
 
         // Quick Sort - Inicio
 
-<<<<<<< HEAD
         fileWriter.write(String.valueOf(quickDouble.sort(sortFiles.numeros100k(), numAsComp)) + "ms - QuickSort Numeros100k Asc \n");
         fileWriter.write(String.valueOf(quickDouble.sort(sortFiles.numeros100k(), numDeComp)) + "ms - QuickSort Numeros100k Dec \n");
         fileWriter.write(String.valueOf(quickDouble.sort(sortFiles.numeros1m(), numAsComp)) + "ms - QuickSort Numeros1m Asc \n");
@@ -293,10 +175,6 @@ public class Main {
         fileWriter.write(String.valueOf(quickLocation.sort(sortFiles.objetos1m(), locAsComp)) + "ms - QuickSort Objetos100k Asc \n");
         fileWriter.write(String.valueOf(quickLocation.sort(sortFiles.objetos1m(), locDeComp)) + "ms - QuickSort Objetos100k Dec \n");
 
-=======
-
-        
->>>>>>> 8b1578bbc85a1035fb85e2ee43cb7e0064da7737
         // Quick Sort - Fim
 
 
