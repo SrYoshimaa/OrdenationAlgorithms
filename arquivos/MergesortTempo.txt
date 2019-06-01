@@ -1,0 +1,12 @@
+528ms - MergeSort Numeros100k Asc 
+643ms - MergeSort Numeros100k Dec 
+4814ms - MergeSort Numeros1m Asc 
+4980ms - MergeSort Numeros1m Dec 
+396ms - MergeSort Palavras100k Asc 
+365ms - MergeSort Palavras100k Dec 
+4084ms - MergeSort Palavras1m Asc 
+4123ms - MergeSort Palavras1m Dec 
+608ms - MergeSort Objetos100k Asc 
+596ms - MergeSort Objetos100k Dec 
+4685ms - MergeSort Objetos100k Asc 
+4648ms - MergeSort Objetos100k Dec 

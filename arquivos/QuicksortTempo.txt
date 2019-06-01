@@ -1,0 +1,12 @@
+58ms - QuickSort Numeros100k Asc 
+57ms - QuickSort Numeros100k Dec 
+475ms - QuickSort Numeros1m Asc 
+491ms - QuickSort Numeros1m Dec 
+48ms - QuickSort Palavras100k Asc 
+42ms - QuickSort Palavras100k Dec 
+722ms - QuickSort Palavras1m Asc 
+720ms - QuickSort Palavras1m Dec 
+46ms - QuickSort Objetos100k Asc 
+45ms - QuickSort Objetos100k Dec 
+905ms - QuickSort Objetos100k Asc 
+894ms - QuickSort Objetos100k Dec 
