@@ -1,0 +1,12 @@
+90305ms - InsertSort Numeros100k Asc 
+91193ms - InsertSort Numeros100k Dec 
+> 300001ms - InsertSort Numeros1m Asc 
+> 300001ms - InsertSort Numeros1m Dec 
+39619ms - InsertSort Palavras100k Asc 
+44061ms - InsertSort Palavras100k Dec 
+> 300003ms - InsertSort Palavras1m Asc 
+> 300002ms - InsertSort Palavras1m Dec 
+125618ms - InsertSort Objetos100k Asc 
+133796ms - InsertSort Objetos100k Dec 
+> 300004ms - InsertSort Objetos1m Asc 
+> 300002ms - InsertSort Objetos1m Dec 

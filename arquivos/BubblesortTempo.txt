@@ -1,0 +1,12 @@
+101815ms - BubbleSort Numeros100k Asc 
+106404ms - BubbleSort Numeros100k Dec 
+> 300052ms - BubbleSort Numeros1m Asc 
+> 300029ms - BubbleSort Numeros1m Dec 
+102569ms - BubbleSort Palavras100k Asc 
+104950ms - BubbleSort Palavras100k Dec 
+> 300017ms - BubbleSort Palavras1m Asc 
+> 300016ms - BubbleSort Palavras1m Dec 
+> 300004ms - BubbleSort Objetos100k Asc 
+290220ms - BubbleSort Objetos100k Dec 
+> 300046ms - BubbleSort Objetos1m Asc 
+> 300032ms - BubbleSort Objetos1m Dec 

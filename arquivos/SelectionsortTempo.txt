@@ -1,0 +1,12 @@
+112507ms - SelectionSort Numeros100k Asc 
+132501ms - SelectionSort Numeros100k Dec 
+> 300003ms - SelectionSort Numeros1m Asc 
+> 300003ms - SelectionSort Numeros1m Dec 
+50521ms - SelectionSort Palavras100k Asc 
+62755ms - SelectionSort Palavras100k Dec 
+> 300003ms - SelectionSort Palavras1m Asc 
+> 300009ms - SelectionSort Palavras1m Dec 
+220435ms - SelectionSort Objetos100k Asc 
+222445ms - SelectionSort Objetos100k Dec 
+> 300006ms - SelectionSort Objetos1m Asc 
+> 300007ms - SelectionSort Objetos1m Dec 
